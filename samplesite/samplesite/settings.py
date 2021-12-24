@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mydict.apps.MydictConfig',    #путь к классу MydictConfig объявленному в модуле apps.py пакета приложения mydict
+    'news.apps.NewsConfig',        #путь к классу NewsConfig объявленному в модуле apps.py пакета приложения mydict
 ]
 
 MIDDLEWARE = [

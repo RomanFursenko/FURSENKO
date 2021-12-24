@@ -19,6 +19,12 @@ from django.urls import path, include
 from mydict.views import index
 
 urlpatterns = [
+   # path('mydict/', include([
+        #('mydict/', MdCreateView.as_view(), name='posts'),
+        #('news/', NsCreateView.as_view(), name = 'news')]))
+    path(' /', include('mydict.urls')),
     path('admin/', admin.site.urls),
     path('mydict/', include('mydict.urls')),
+    #path('news/', include('news.urls'))
 ]
+
